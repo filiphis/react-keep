@@ -1,4 +1,4 @@
-# Projeto React Keep
+# React Keep
 > **_Status do projeto:_** Em desenvolvimento :hammer_and_wrench: :construction:
 
 <!-- ## Preview
