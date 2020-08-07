@@ -1,0 +1,56 @@
+<!--
+  // Autocomplete de html no jsx
+ "emmet.syntaxProfiles": {"javascript": "jsx"},
+ "emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+ // Ctrl + .
+ // Auto import em js e ts
+ "javascript.suggest.autoImports": true,
+ "typescript.suggest.autoImports": true,
+-->
+
+<!-- ESTRUTURA -->
+<!-- Criar um arquivo ./routes com a configuração de todas as rotas -->
+
+<!-- Criar uma pasta ./components que irá conter os componentes que podem ser reutilizados em outras páginas -->
+
+<!-- Criar o arquivo ./assets/styles/global.css que irá conter as estilizações globais/variaveis e base.css / reset.css -->
+
+<!-- Criar a pasta ./pages que irá conter todas as páginas da aplicação  -->
+
+<!-- ######### -->
+
+
+
+<!-- REACT -->
+<!-- Componentes: Quando definimos um atributo a um componente o valor deste atributo será substituido pela propriedade definida na criação do componente -->
+<!-- Componentes: Quando passamos um valor/conteudo ao componente, este valor será substituido pela propriedade children. {props.children} são como o textContent no html
+OBS: Podemos passar ou não o valor nos componentes, isso fará com que o mesmo componentes tenha algumas diferenças em outras páginas.
+-->
+
+<!--  -->
+
+<!-- ######### -->
+
+
+<!-- TYPESCRIPT -->
+<!-- Criar interface e atributos:type que devem ser obrigatorios nos componentes -->
+<!-- Definir esse componente como do tipo React.FC e passar a interface criada entre <> -->
+<!-- Ex: -->
+<!--
+
+interface Pessoa {
+  nome: string;
+  idade: number;
+}
+
+const componenteMostraPessoa: React.FC<Pessoa> = (props) => {
+  return (
+    <strong>{props.nome}</strong>
+    <strong>{props.idade}</strong>
+  );
+}
+
+-->
+
+<!-- ######### -->
