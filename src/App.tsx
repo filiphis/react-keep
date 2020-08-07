@@ -2,16 +2,12 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import ListaDeNotas from './components/ListaDeNotas';
+import FormularioCadastro from './components/FormularioCadastro';
 
 function App() {
   return (
     <section>
-      <form action="">
-        <input type="text" placeholder="Titulo" />
-        <textarea placeholder="Escreva sua nota" />
-        <button type="button">Criar nota</button>
-      </form>
-
+      <FormularioCadastro />
       <ListaDeNotas />
     </section>
   );
