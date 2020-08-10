@@ -1,16 +1,17 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/extensions */
-import React from 'react';
-import ListaDeNotas from './components/ListaDeNotas';
-import FormularioCadastro from './components/FormularioCadastro';
+import React, { Component } from "react";
+import ListNotes from "./components/ListNotes";
+import RegisterForm from "./components/RegisterForm";
+// import './App.css';
 
-function App() {
-  return (
-    <section>
-      <FormularioCadastro />
-      <ListaDeNotas />
-    </section>
-  );
+class App extends Component {
+  render() {
+    return (
+      <section className="conteudo">
+        <RegisterForm />
+        <ListNotes />
+      </section>
+    );
+  }
 }
 
 export default App;

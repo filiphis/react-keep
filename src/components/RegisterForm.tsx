@@ -1,10 +1,9 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-export default class FormularioCadastro extends Component {
+class RegisterForm extends Component {
   render() {
     return (
-      <form action="">
+      <form className="form-cadastro" action="">
         <input type="text" placeholder="Titulo" />
         <textarea placeholder="Escreva sua nota" />
         <button type="button">Criar nota</button>
@@ -12,3 +11,5 @@ export default class FormularioCadastro extends Component {
     );
   }
 }
+
+export default RegisterForm;

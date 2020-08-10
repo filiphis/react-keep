@@ -1,26 +1,30 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import './CardNote.css';
 
-/**
- * this interface represent a CardNote item
- * title: String;
- * description: String;
- */
-interface CardNoteProps {
+export type Categorie = {
   title: string;
-  description: string;
 }
 
-class CardNote extends React.Component<CardNoteProps> {
+type Props = {
+  title: string;
+  description: string;
+  // categories: string;
+  categories: Categorie[];
+}
+
+class CardNote extends React.Component<Props> {
   render() {
-    const { title, description } = this.props;
+    const { title, description, categories } = this.props;
     return (
       <li>
-        <section>
+        <section className="card-note">
           <header>
             <h3>{title}</h3>
           </header>
           <p>{description}</p>
+          <h3>Categorias</h3>
+          {categories.map((item, index) => <strong key={index}>{item.title} </strong>
+          )}
         </section>
       </li>
     );
