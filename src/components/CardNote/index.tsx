@@ -1,30 +1,32 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import './CardNote.css';
+import './styles.css';
 
 export type Categorie = {
   title: string;
-}
+};
 
 type Props = {
   title: string;
   description: string;
   // categories: string;
   categories: Categorie[];
-}
+};
 
 class CardNote extends React.Component<Props> {
   render() {
     const { title, description, categories } = this.props;
     return (
-      <li>
-        <section className="card-note">
-          <header>
-            <h3>{title}</h3>
+      <li className="lista-notas_item">
+        <section className="card-nota">
+          <header className="card-nota_cabecalho">
+            <h3 className="card-nota_cabecalho">{title}</h3>
           </header>
-          <p>{description}</p>
+          <p className="card-nota_texto">{description}</p>
           <h3>Categorias</h3>
-          {categories.map((item, index) => <strong key={index}>{item.title} </strong>
-          )}
+          {categories.map((item, index) => (
+            <strong key={index}>{item.title} </strong>
+          ))}
         </section>
       </li>
     );
