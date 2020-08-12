@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .conteudo {
   display: flex;
 }
@@ -8,4 +12,8 @@
   --secundaria-ativa: #cccccc;
   --fundo: #ffffff;
   --fundo-detalhes: #ececec;
+}
+
+.conteudo-principal {
+  flex-grow: 3;
 }
