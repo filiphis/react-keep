@@ -21,6 +21,7 @@ class CardNota extends Component {
         />
         <header className="card-nota_cabecalho">
           <h3 className="card-nota_titulo">{titulo}</h3>
+          <h4>{this.props.categoria}</h4>
         </header>
         <p className="card-nota_texto">{texto}</p>
       </section>
