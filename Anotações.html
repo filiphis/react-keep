@@ -32,6 +32,15 @@ Props: são propriedades que passamos de um componente para outro quando o compo
 State: é uma forma de salvar informações que serão observadas pelo Virtual Dom.
 
 
+Observable: 
+  - Ao utilizar o setState em um componente muito generico, ele irá renderizar todos os componentes filhos toda vez que for alterado.
+
+  - Por isso devemos separar os componentes visuais dos dados da aplicação para que quando o dado seja alterado, somente renderize o visual do componente a que está ligado
+
+  - Para verificar essa mudaça nos dados e atualizar o estado visual de algum compoenente especifico, é utilizado o padrao OBSERVABLE.
+
+  - Sendo assim, toda vez que o dado for alterado, o componente visual será notificado.
+
 -->
 
 <!-- ######### -->
